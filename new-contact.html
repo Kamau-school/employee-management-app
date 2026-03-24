@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Contact</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>EMS</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="new-contact.html">New Contact</a>
+        <a href="view-contacts.html">View Contacts</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Add Employee</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="text" id="phone" placeholder="Phone Number" required>
+        <input type="text" id="department" placeholder="Department" required>
+        <input type="text" id="position" placeholder="Position" required>
+        <input type="file" id="image" accept="images/" required>
+
+        <button type="submit">Save Employee</button>
+    </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
