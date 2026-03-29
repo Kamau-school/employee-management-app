@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>View Contacts</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Contacts | EMS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <nav class="navbar">
+        <div class="logo">EMS Pro</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="new-contact.html">New Contact</a></li>
+            <li><a href="view-contacts.html">View All Contacts</a></li>
+        </ul>
+    </nav>
 
-<nav class="navbar">
-    <h2>EMS</h2>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="new-contact.html">New Contact</a>
-        <a href="view-contacts.html">View Contacts</a>
-    </div>
-</nav>
+    <section class="container">
+        <h2>Employee Directory</h2>
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>jane@gmail.com</td>
+                    <td>+254758420930</td>
+                    <td>Engineering</td>
+                    <td>
+                        <button class="btn-details" onclick="viewDetails('Jane Smith','jane@gmail.com','+254758420930','Engineering')">Details</button>
+                        <button class="btn-edit" onclick="editAlert()">Edit</button>
+                        <button class="btn-delete" onclick="confirmDelete()">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john12@gmail.com</td>
+                    <td>+254746394891</td>
+                    <td>IT</td>
+                    <td>
+                        <button class="btn-details" onclick="viewDetails('John Doe','john12@gmail.com','+254746394891','IT')">Details</button>
+                        <button class="btn-edit" onclick="editAlert()">Edit</button>
+                        <button class="btn-delete" onclick="confirmDelete()">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Paul George</td>
+                    <td>paul@gmail.com</td>
+                    <td>+254737483789</td>
+                    <td>FInance</td>
+                    <td>
+                        <button class="btn-details" onclick="viewDetails('Paul George','paul@gmail.com','+254737483789','Finance')">Details</button>
+                        <button class="btn-edit" onclick="editAlert()">Edit</button>
+                        <button class="btn-delete" onclick="confirmDelete()">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-<div class="container">
-    <h2>Employee Contacts</h2>
-
-    <input type="text" id="search" placeholder="Search employees..." onkeyup="searchContacts()">
-
-    <table id="contactsTable">
-        <thead>
-            <tr>
-                <th>Photo</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone</th>
-                <th>Department</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

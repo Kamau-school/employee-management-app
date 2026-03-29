@@ -1,105 +1,160 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
+* {
     margin: 0;
-    background: #f5f7fa;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* NAVBAR */
+body { 
+    background-color: #f4f7f6; 
+    color: #333;
+}
+
+/* Navigation Bar */
 .navbar {
-    background: #1e293b;
+    background: #2c3e50;
     color: white;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    align-items: center;
 }
 
-.navbar a {
-    color: white;
-    margin-left: 15px;
-    text-decoration: none;
+.navbar ul { 
+    display: flex; 
+    list-style: none;
 }
 
-.navbar a:hover {
-    text-decoration: underline;
+.navbar ul li { 
+    margin-left: 20px;
 }
 
-/* CONTAINER */
-.container {
-    padding: 20px;
+.navbar ul li a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: 500;
 }
 
-.center {
+/* Hero Section */
+.hero {
     text-align: center;
-    margin-top: 100px;
-}
-
-/* FORM */
-form {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-}
-
-form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-img.profile {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* BUTTONS */
-button, .btn {
-    background: #2563eb;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover, .btn:hover {
-    background: #1d4ed8;
-}
-
-/* TABLE */
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
+    padding: 100px 20px;
     background: white;
 }
 
-th {
-    background: #2563eb;
+.hero h1 { 
+    font-size: 2.5rem; 
+    color: #2c3e50;
+}
+
+/* buttons style homepage */
+.btn {
+    display: inline-block;
+    background-color: #3498db; 
     color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px; 
+    transition: all 0.3s ease; 
+    border: 2px solid transparent;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
+/* Hover effect */
+.btn:hover {
+    background-color: #2980b9; 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+    color: #ffffff;
 }
 
-/* SEARCH */
-#search {
-    padding: 10px;
+/* Active effect */
+.btn:active {
+    transform: translateY(-1px);
+}
+
+/* Layout Container */
+.container { 
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 30px auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+/* Form Styling */
+.form-group { 
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+}
+
+.form-group input, .form-group select { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+.btn-submit { 
+    background: #27ae60; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 4px; 
     width: 100%;
-    margin-bottom: 10px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    table, th, td {
-        font-size: 12px;
-    }
+/* Table Styling */
+.employee-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px;
+}
 
-    .navbar {
-        flex-direction: column;
-    }
+.employee-table th, .employee-table td { 
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: left;
+}
+
+.employee-table th { 
+    background-color: #f8f9fa;
+}
+
+/* Button Styles form */
+.btn-details { 
+    background: #3498db; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 3px;
+}
+
+.btn-edit {
+    background: #f39c12; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 3px;
+}
+
+.btn-delete { 
+    background: #e74c3c; 
+    color: white; 
+    border: none; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    border-radius: 3px;
 }
