@@ -114,6 +114,27 @@ body {
     width: 100%;
 }
 
+/* Style for the file input container */
+.file-input {
+    border: 1px dashed #3498db; 
+    padding: 15px;
+    background: #fcfdfd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.file-input:hover {
+    background: #ebf5fb;
+}
+
+/* Small helper text styling */
+small {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+}
+
 /* Table Styling */
 .employee-table { 
     width: 100%; 
@@ -129,6 +150,21 @@ body {
 
 .employee-table th { 
     background-color: #f8f9fa;
+}
+
+/* Styling for employee thumbnails in the table */
+.emp-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 2px solid #ddd;
+}
+
+/* Center the image in the table cell */
+.employee-table td:first-child {
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Button Styles form */

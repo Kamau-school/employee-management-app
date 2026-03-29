@@ -20,6 +20,11 @@
         <h2>Add New Employee</h2>
         <form id="employeeForm">
             <div class="form-group">
+                <label>Profile Picture</label>
+                <input type="file" id="employeeImage" accept="image/*" class="file-input">
+                <small>Upload a JPG or PNG photo (Max 2MB)</small>
+            </div>
+            <div class="form-group">
                 <label>Full Name</label>
                 <input type="text" placeholder="e.g. John Doe" required>
             </div>
@@ -38,6 +43,7 @@
                     <option>HR</option>
                     <option>Finance</option>
                     <option>Marketing</option>
+                    <option>Engineering</option>
                 </select>
             </div>
             <div class="form-group">
